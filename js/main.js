@@ -13,8 +13,9 @@ var bottoneAnnulla = document.getElementById('bottoneAnnulla');
 bottoneAnnulla.addEventListener('click',
   function() {
     var nome = document.getElementById('nome').value = '';
-    var nome = document.getElementById('km').value = '';
-    var nome = document.getElementById('fascia-eta').value = 'minorenne';
+    var kmDaPercorrere = document.getElementById('km').value = '';
+    var fasciaEta = document.getElementById('fascia-eta').value = 'minorenne';
+    container.className = 'hidden';
   }
 );
 
