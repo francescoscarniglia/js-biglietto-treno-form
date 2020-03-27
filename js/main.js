@@ -2,35 +2,44 @@
  * VENDITA BIGLIETTO TRENO
  ***************************/
 
-/** 
+/**
  * REFERENZE ELEMENTI
  */
 var container = document.getElementById('biglietto');
 var bottoneGenera = document.getElementById('bottoneGenera');
+var bottoneAnnulla = document.getElementById('bottoneAnnulla');
 
-
+// ANNULLA GLI INPUT
+bottoneAnnulla.addEventListener('click',
+  function() {
+    var nome = document.getElementById('nome').value = '';
+    var nome = document.getElementById('km').value = '';
+    var nome = document.getElementById('fascia-eta').value = 'minorenne';
+  }
+);
 
 /**
  * EVENTI
  */
 
 // Generare il biglieto
-bottoneGenera.addEventListener('click', 
+bottoneGenera.addEventListener('click',
     function() {
         // Ottieni valori input utente
         var nome = document.getElementById('nome').value;
-        //console.log(nome); 
+        //console.log(nome);
 
         var kmDaPercorrere = document.getElementById('km').value;
-        //console.log(kmDaPercorrere); 
+        //console.log(kmDaPercorrere);
 
         var fasciaEta = document.getElementById('fascia-eta').value;
-        //console.log(fasciaEta); 
+        //console.log(fasciaEta);
 
         // Calcolo biglietto
         var prezzoKm = 0.21;
         var costoBiglietto = prezzoKm * kmDaPercorrere;
         var offerta = 'Biglietto Standard';
+
 
         // Calcoliamo il costo e l'offerta applicata
         if (fasciaEta == 'minorenne') {
@@ -61,10 +70,7 @@ bottoneGenera.addEventListener('click',
 
         // Mostra biglietto
         container.className = 'show';
-    }   
+    }
 );
 
 // Reset biglietto
-
-
-
