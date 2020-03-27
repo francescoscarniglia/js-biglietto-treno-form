@@ -5,30 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mycss.css">
 </head>
 <body>
-    
+  <div id="logo">
+      <img src="img/logo-taxi.svg" alt="logo idalo">
+  </div>
+
     <div class="wrapper">
-        <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
+
+        <h1 class="title padding-per">Calcola il prezzo del tuo biglietto</h1>
 
         <div class="dati-input">
             <div class="row">
-                <div class="col">
-                    <label for="nome">Nome e Cognome</label>
-                    <input id="nome" type="text" 
+                <div class="col padding-per ">
+                    <label class="line-h-30" for="nome">Nome e Cognome</label>
+                    <input id="nome" type="text"
                            name="nome"
                             placeholder="inserisci il tuo nome"
                     >
                 </div>
-                <div class="col">
-                    <label for="km">Km da percorrere</label>
+                <div class="col padding-per ">
+                    <label class="line-h-30" for="km">Km da percorrere</label>
                     <input id="km" type="number" min="1" max="300"
                            name="km"
                             placeholder="inserisci i Km"
                     >
                 </div>
-                <div class="col">
-                    <label for="fascia-eta">Fascia d'età</label>
+                <div class="col padding-per ">
+                    <label class="line-h-30" for="fascia-eta">Fascia d'età</label>
                     <select name="fascia-eta" id="fascia-eta">
                         <option value="minorenne">Minorenne</option>
                         <option value="maggiorenne">Maggiorenne</option>
@@ -37,24 +42,24 @@
                 </div>
             </div>
 
-            <div class="row">
-                <button class="btn" id="bottoneGenera">Genera</button>
-                <button class="btn" id="bottoneAnnulla">Annulla</button>
+            <div class="row text-center padding-per">
+                <button class="btn bg-primary col-black f-w-700 t-upp" id="bottoneGenera">Genera</button>
+                <button class="btn bg-primary col-black f-w-700 t-upp" id="bottoneAnnulla">Annulla</button>
             </div>
         </div>
 
-        <section id="biglietto" class="hidden">
-            <h2 class="title">Il tuo biglietto</h2>
+        <section id="biglietto" class="hidden padding-per">
+            <h4 class="title padding-per t-upp col-gray f-w-700">Riepilogo del biglietto</h4>
 
-            <h3>Dettagli passeggeri</h3>
+            <h4 class="title padding-per  t-upp col-gray f-w-400">Dettagli passeggero</h4>
 
             <div class="contenuti">
                 <div class="nome">
-                    <h2>Nome Passeggero</h2>
-                    <h3 id="nome-passeggero"></h3>
+                    <span class="padding-per-20 inline-b">Nome Passeggero</span>
+                    <span class="padding-per-20 inline-b t-upp f-w-700" id="nome-passeggero"></span>
                 </div>
                 <div class="offerta">
-                    <table>
+                    <table class="padding-per-20">
                         <thead>
                             <tr>
                                 <th>Offerta</th>

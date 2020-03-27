@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
+
+/*  COMPORTAMENTI JAVASCRIPT */
+.show {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
+/* UTILITIES */
+.bg-primary {
+  background: #ffed00;
+}
+
+.bg-primary:hover {
+  background: black;
+}
+
+.col-primary {
+  color: #ffed00;
+}
+
+.col-primary:hover {
+  color: black;
+}
+
+.col-white {
+  color: #fff;
+}
+
+.col-black {
+  color: #000;
+}
+
+.col-black:hover {
+  color: #ffed00;
+}
+
+.col-gray {
+  color: gray;
+}
+
+.f-w-400 {
+  font-weight: 100;
+}
+
+.f-w-700 {
+  font-weight: 700;
+}
+
+.t-upp {
+  text-transform: uppercase;
+}
+.btn {
+  padding: 16px;
+  margin: 10px 5px;
+  border: 0;
+  cursor: pointer;
+}
+
+.line-h-30 {
+  line-height: 30px;
+}
+
+.padding-per {
+  padding: 10px 20px;
+}
+
+.padding-per-20 {
+  margin: 20px 20px;
+}
+.inline-b {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
